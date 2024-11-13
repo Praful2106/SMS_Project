@@ -1,0 +1,123 @@
+/* Main container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #58e86b, #4ea9cf);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Login box */
+.login-box {
+    background: #fff;
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.login-box h2 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input group */
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    background-color: #f7f7f7;
+}
+
+.input-group i {
+    margin-right: 15px;
+    color: #aaa;
+    font-size: 18px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    flex: 1;
+    background: none;
+    // font-size: 16px;
+    color: #333;
+}
+
+.input-group input::placeholder {
+    color: none;
+}
+
+/* Error messages */
+.error-container {
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+.error-msg {
+    color: red;
+    font-size: 13px;
+    text-align: left;
+}
+
+/* Forgot password link */
+.forgot-password {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.forgot-password a {
+    font-size: 13px;
+    color: #555;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Login button */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #662D91, #FF3674);
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+    background: linear-gradient(90deg, #26cc60, #bd90e0);
+}
+
+/* Or sign in section */
+.or-sign-up {
+    font-size: 14px;
+    color: #888;
+}
+
+.sign-up {
+    color: #333;
+    cursor: pointer;
+    border-bottom: 1px solid #333;
+    padding-bottom: 2px;
+}
+
+/* Icon opacity */
+.opt {
+    opacity: 0.5;
+}

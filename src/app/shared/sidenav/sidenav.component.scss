@@ -1,0 +1,53 @@
+.newsidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 208px;
+    z-index: 100;
+    background-color: #191d20;
+  }
+  .logo-details {
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #191d20;
+  }
+  .navs.active {
+    background-color: #202428;
+    text-decoration: none;
+  }
+  // .list {
+  //   padding: 10px 15px;
+  // }
+  .navs {
+    padding: 8px 15px;
+  
+    img {
+      height: 20px;
+      padding: 0px 10px;
+    }
+    p {
+      font-family: Mulish;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 16.32px;
+      color: #ffffff;
+      margin-top: 2px;
+    }
+  }
+  .newsidebar .list {
+    position: relative;
+  }
+  .navs.active:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 4px;
+    height: 100%;
+    background: #2da3ff; /* Active indicator color */
+    opacity: 1; /* Ensure indicator is visible */
+    transition: all 0.25s ease-in-out;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; /* Ensure rounded corners on bottom as well */
+  }

@@ -1,0 +1,338 @@
+.nav-parent {
+    background: #191d20 !important;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .name {
+    font-family: Mulish;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16.32px;
+    color: #ffffff;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+  }
+  
+  input:focus {
+    outline-offset: -2px;
+  }
+  .search-logo {
+    display: flex;
+    background: #191d20 !important;
+  
+    img {
+      margin: 0px 25px;
+    }
+  }
+  #searchInput {
+    width: 31vw;
+    border-radius: 30px;
+    font-size: 16px;
+    background-color: #252a30;
+    // background-image: url("../../../assets/Search.png");
+    background-position: 16px 11px;
+    background-repeat: no-repeat;
+    padding: 8px 20px 8px 40px;
+    -webkit-transition: width 0.8s ease-in-out;
+    transition: width 0.8s ease-in-out;
+    outline: none;
+    opacity: 0.9;
+    margin-top: 6px;
+    font-family: Mulish;
+    border: none;
+  }
+  
+  .subscription {
+    .crown {
+    //   background-image: url("../../../assets/crown_17301418 1.png");
+      background-position: 7px 6px;
+      background-repeat: no-repeat;
+      height: 30px;
+      width: 30px;
+      padding: 4px;
+      border-radius: 50%;
+      border: 2px solid #33373c;
+      background-color: #202428;
+      margin-top: 2px;
+    }
+    .plan {
+      margin: 0px 12px;
+    }
+    .content1 {
+      font-family: Mulish;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 16.32px;
+      color: #e8f2ff;
+    }
+    .content2 {
+      font-family: Mulish;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 12.55px;
+      color: #8b9199;
+    }
+    .expire {
+      font-family: Mulish;
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 12.55px;
+      color: #ff6a5d;
+    }
+    .upgrade {
+      background: linear-gradient(90deg, #40c9ff 0%, #e81cff 100%);
+      border-radius: 17px;
+      padding: 3px 6px 3px 6px;
+      margin-top: 3px;
+      border: none;
+      color: #ffffff;
+      font-size: 12px;
+    }
+  }
+  .logout {
+    color: #8b9199;
+    font-family: Mulish;
+    font-weight: 500px;
+  }
+  .profile-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    //   padding: 20px 0px;
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+    p {
+      margin: 0px 7px !important;
+    }
+  }
+  
+  .mr-4 {
+    margin-right: 2rem;
+  }
+  p {
+    font-family: Mulish;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16.32px;
+    color: #ffffff;
+  }
+  i {
+    padding: 3px;
+    font-size: 10px;
+  }
+  @media screen and (max-width: 1441px) {
+    .nav-parent {
+      background: linear-gradient(90deg, #bd4733 0%, #195dba 100%);
+      color: white;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .name {
+      font-family: Mulish;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 16.32px;
+      color: #ffffff;
+      align-items: center;
+      padding: 15px;
+      cursor: pointer;
+    }
+  
+    input:focus {
+      outline-offset: -2px;
+    }
+    .search-logo {
+      display: flex;
+    }
+    #searchInput {
+      width: 31vw;
+      border: 1px solid #000;
+      border-radius: 30px;
+      font-size: 16px;
+      background-color: #ffffff;
+      background-image: url("https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-24.png");
+      background-position: 10px 7px;
+      background-repeat: no-repeat;
+      padding: 8px 20px 8px 40px;
+      -webkit-transition: width 0.8s ease-in-out;
+      transition: width 0.8s ease-in-out;
+      outline: none;
+      opacity: 0.9;
+      margin-top: 2px;
+      font-family: Mulish;
+    }
+    .profile-action {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      //   padding: 20px 0px;
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 5px;
+      }
+    }
+  
+    .mr-4 {
+      margin-right: 2rem;
+    }
+    p {
+      font-family: Mulish;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 16.32px;
+      color: #ffffff;
+    }
+    i {
+      padding: 3px;
+      font-size: 10px;
+    }
+  }
+  @media screen and (max-width: 1025px) {
+    .nav-parent {
+      background: linear-gradient(90deg, #bd4733 0%, #195dba 100%);
+      color: white;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 886px;
+    }
+    .name {
+      font-family: Mulish;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 16.32px;
+      color: #ffffff;
+      align-items: center;
+      padding: 15px;
+      cursor: pointer;
+    }
+  
+    input:focus {
+      outline-offset: -2px;
+    }
+    .search-logo {
+      display: flex;
+    }
+    #searchInput {
+      width: 31vw;
+      border: 1px solid #000;
+      border-radius: 30px;
+      font-size: 16px;
+      background-color: #ffffff;
+      background-image: url("https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-24.png");
+      background-position: 10px 7px;
+      background-repeat: no-repeat;
+      padding: 8px 20px 8px 40px;
+      -webkit-transition: width 0.8s ease-in-out;
+      transition: width 0.8s ease-in-out;
+      outline: none;
+      opacity: 0.9;
+      margin-top: 2px;
+      font-family: Mulish;
+    }
+    .profile-action {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      //   padding: 20px 0px;
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 5px;
+      }
+    }
+  
+    .mr-4 {
+      margin-right: 2rem;
+    }
+    p {
+      font-family: Mulish;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 16.32px;
+      color: #ffffff;
+    }
+    i {
+      padding: 3px;
+      font-size: 10px;
+    }
+  }
+  @media screen and (max-width: 769px) {
+    .nav-parent {
+      width: 629px;
+    }
+  }
+  .logout-dialog-container {
+    padding: 20px;
+    text-align: center;
+    background-color: #202428;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logout-dialog-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff !important;
+    margin-bottom: 10px;
+  }
+  
+  .logout-dialog-content {
+    font-size: 16px;
+    color: #dddddd;
+    margin-bottom: 20px;
+  }
+  
+  .logout-dialog-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .cancel-button {
+    background-color: #f44336;
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  
+    &:hover {
+      background-color: #d32f2f;
+    }
+  }
+  
+  .confirm-button {
+    background-color: #195dba;
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  
+    &:hover {
+      background-color: #195dba;
+    }
+  }
+  

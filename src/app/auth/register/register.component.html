@@ -1,0 +1,94 @@
+<div class="login-container">
+    <div class="login-box">
+        <h2>Sign Up</h2>
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+            <!-- Full Name Input -->
+            <div class="input-group">
+                <label for="">Full Name</label>
+                <input type="text" formControlName="fullName" placeholder="Enter your full name" required>
+                <div *ngIf="isControlInvalid('fullName')">
+                    <span class="error-msg" *ngIf="getControlErrors('fullName')?.['required']">Full name is
+                        required</span>
+                    <span class="error-msg" *ngIf="getControlErrors('fullName')?.['pattern']">Enter only string</span>
+                    <span class="error-msg" *ngIf="getControlErrors('fullName')?.['minlength']">Enter minimum 3
+                        characters</span>
+                </div>
+
+            </div>
+
+            <!-- Email Input -->
+            <div class="input-group">
+                <label for="">Email</label>
+                <input type="text" formControlName="email" placeholder="Enter your email" required>
+                <div *ngIf="isControlInvalid('email')">
+                    <span class="error-msg" *ngIf="getControlErrors('email')?.['required']">Email is requied</span>
+                    <span class="error-msg" *ngIf="getControlErrors('email')?.['email']">Enter valid email</span>
+                </div>
+            </div>
+            <!-- Courses FormArray -->
+            <div formArrayName="courses">
+                <div *ngFor="let coursesForm of courses.controls; let i = index" [formGroupName]="i">
+                    <!-- Course Select -->
+
+                    <div class="input-group">
+                        <label for="">Course</label>
+                        <select [formControlName]="'courseName'" required>
+                            <option value="">Select Course</option>
+                            <option *ngFor="let course of myCourses" [value]="course._id">{{course.courseName}}</option>
+            
+                        </select>
+
+                        <div *ngIf="isCourseControlInvalid(i, 'courseName')">
+                            <span class="error-msg" *ngIf="getCourseControlErrors(i, 'courseName')?.['required']">
+                                Course name is required
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Duration Select -->
+                    <div class="input-group">
+
+                        <label for="">Duration</label>
+                        <select [formControlName]="'duration'" required>
+                            <option value="">Select Duration</option>
+                            <option value="3 Months">3 Months</option>
+                            <option value="6 Months">6 Months</option>
+                            <option value="1 Year">1 Year</option>
+                        </select>
+                        <div *ngIf="isCourseControlInvalid(i, 'duration')">
+                            <span class="error-msg" *ngIf="getCourseControlErrors(i, 'duration')?.['required']">
+                                Duration is required
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Level Select -->
+                    <div class="input-group">
+
+                        <label for="">Level</label>
+                        <select [formControlName]="'level'" required>
+                            <option value="">Select Level</option>
+                            <option value="Beginner">Beginner</option>
+                            <option value="Intermediate">Intermediate</option>
+                            <option value="Advanced">Advanced</option>
+                        </select>
+                        <div *ngIf="isCourseControlInvalid(i, 'level')">
+                            <span class="error-msg" *ngIf="getCourseControlErrors(i, 'level')?.['required']">
+                                Level is required
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Remove Course Button -->
+                    <button type="button" (click)="deleteCourse(i)">Remove Course</button>
+                </div>
+            </div>
+
+            <!-- Add Course Button -->
+            <button type="button" (click)="addCourses()">Add Another Course</button>
+
+            <!-- Sign Up Button -->
+            <button class="login-btn-invalid" *ngIf="registerForm.invalid" type="submit"
+                [disabled]="registerForm.invalid">Sign Up</button>
+            <button class="login-btn" *ngIf="registerForm.valid" type="submit">Sign Up</button>
+
+        </form>
+    </div>
+</div>

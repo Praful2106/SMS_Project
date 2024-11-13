@@ -1,0 +1,138 @@
+/* Main container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #58e86b, #4ea9cf);
+}
+
+/* Login box */
+.login-box {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Increased width for better form alignment */
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input group */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns labels and inputs properly */
+    // margin-bottom: 20px; /* Increased spacing between fields */
+}
+
+.input-group label {
+    font-size: 14px;
+    margin-bottom: 5px; /* Adds space between label and input */
+    color: #333;
+    font-weight: bold;
+    float: left;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    // margin-bottom: 10px; /* Space below each input field */
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus, .input-group select:focus {
+    border-color: #26cc60; /* Green border on focus */
+}
+
+.opt {
+    opacity: 0.3;
+}
+
+/* Remove course button */
+button[type="button"] {
+    background: #ff3674;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: background 0.3s ease;
+}
+
+button[type="button"]:hover {
+    background: #662d91;
+}
+
+/* Add course button */
+button[type="button"]:last-of-type {
+    margin-top: 15px;
+    background: #26cc60;
+}
+
+button[type="button"]:last-of-type:hover {
+    background: #4ea9cf;
+}
+
+/* Login button */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #662D91, #FF3674);
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+.login-btn-invalid{
+    width: 100%;
+    padding: 12px;
+    background: #6a66;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.login-btn:hover {
+    background: linear-gradient(90deg, #26cc60, #bd90e0);
+}
+
+/* General styling for select dropdowns */
+input, select {
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 100%; /* Ensure inputs take full width */
+}
+.error-msg{
+    color: red;
+    font-size: 12px;
+}
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .login-box {
+        width: 100%;
+        padding: 20px;
+    }
+}
